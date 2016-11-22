@@ -1,0 +1,49 @@
+{
+  "name": "reactd3js-h1b-software-salaries",
+  "version": "0.0.0",
+  "description": "Experiment to see if we can get react.js and d3.js playing well together.",
+  "main": "index.html",
+  "scripts": {
+    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "npm run clean && npm run build:webpack",
+    "start": "node devServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rccclr/reactd3js-h1b-software-salaries.git"
+  },
+  "author": "rccclr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rccclr/reactd3js-h1b-software-salaries/issues"
+  },
+  "homepage": "https://github.com/rccclr/reactd3js-h1b-software-salaries",
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-eslint": "^5.0.0-beta4",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-react-hmre": "^1.0.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^1.10.3",
+    "eslint-plugin-babel": "^3.0.0",
+    "eslint-plugin-react": "^3.11.3",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.13.3",
+    "rimraf": "^2.4.3",
+    "webpack": "^1.12.9",
+    "webpack-dev-middleware": "^1.4.0",
+    "webpack-hot-middleware": "^2.6.0"
+  },
+  "dependencies": {
+    "css-loader": "^0.26.0",
+    "d3": "^3.5.12",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "lodash": "^3.10.1",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "style-loader": "^0.13.1"
+  }
+}
